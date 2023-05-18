@@ -1,0 +1,148 @@
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+::selection {
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+
+/* header */
+header {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    border: 1px solid black;
+    margin: 15px 60px;
+    padding: 5px 30px;
+    font-size: 30px;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+    margin: 15px 30px;
+}
+
+/* main */
+/* section1 */
+form {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 50px auto;
+    border-radius: 40px;
+}
+
+form p {
+    padding-left: 30px;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+
+form input {
+    width: 530px;
+    outline: none;
+    border: none;
+    margin-left: 30px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 30px;
+}
+
+form button {
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+/* section2 */
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 70px;
+    justify-content: flex-start;
+    height: 400px;
+}
+
+.conteiner__notes {
+    border: 1px solid black;
+    width: 330px;
+    border-radius: 35px;
+    margin: 20px;
+}
+
+.conteiner__notes h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+.closed {
+    width: 40px;
+    height: 40px;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.conteiner__notes p {
+    padding: 10px;
+    margin-top: 0px;
+    overflow: hidden;
+    max-height: 250px;
+    word-break: break-all;
+    user-select: none;
+    cursor: pointer;
+}
+
+.conteiner__notes p:hover {
+    background-color: black;
+    color: white;
+}
+
+.conteiner__notes .date {
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.conteiner__notes .links {
+    border-top: 1px solid black;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.conteiner__notes .links img {
+    height: 25px;
+    width: 30px;
+    margin: 5px;
+}
+
+.closed {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.closed:hover {
+    background-color: black;
+    color: white;
+}
