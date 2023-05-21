@@ -9,7 +9,7 @@ function fillNote() {
         document.querySelector("p").textContent = element.date;
     });
 
-}
+    }
 let textarea = document.querySelector("textarea")
 document.querySelector(".copy").addEventListener("click", function () {
     textarea.select();
@@ -24,20 +24,6 @@ edite.addEventListener("click", function () {
     else {
         textarea.readOnly = true;
         edite.className = "edite"
-        // let x = 0;
-        // let newData = JSON.parse(localStorage.getItem('newData'));
-        // newData.forEach((item) => {
-        //     x = item.id;
-        //     item.text = textarea.innerHTML;
-        //     let info = JSON.parse(localStorage.getItem('info'));
-        //     info.forEach(item => {
-        //         if (item.id === x) {
-        //             item.text = textarea.textContent;
-        //         }
-        //     })
-
-        // })
-
     }
 
 })
