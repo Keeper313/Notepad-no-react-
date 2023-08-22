@@ -24,20 +24,17 @@ edite.addEventListener("click", function () {
     else {
         textarea.readOnly = true;
         edite.className = "edite"
-        // let x = 0;
-        // let newData = JSON.parse(localStorage.getItem('newData'));
-        // newData.forEach((item) => {
-        //     x = item.id;
-        //     item.text = textarea.innerHTML;
-        //     let info = JSON.parse(localStorage.getItem('info'));
-        //     info.forEach(item => {
-        //         if (item.id === x) {
-        //             item.text = textarea.textContent;
-        //         }
-        //     })
-
-        // })
-
+        let newData = JSON.parse(localStorage.getItem("newData"));
+        let info = JSON.parse(localStorage.getItem("info"));
+        let newText = document.querySelector("textarea").value;
+        newData[0].text = newText;
+        for(const item of info){
+            if(newData[0].id === item.id){
+                item.text = newText;
+            }
+        }
+        localStorage.setItem("info", JSON.stringify(info))
+        localStorage.setItem("newData", JSON.stringify(newData))
     }
 
 })

@@ -51,10 +51,15 @@ form input {
     margin-left: 30px;
 }
 
+form textarea{
+    margin-left: 30px;
+    resize: none;
+}
+
 form div {
     display: flex;
     justify-content: space-between;
-    margin: 70px 30px;
+    margin: 0px 30px;
 }
 
 form button {
